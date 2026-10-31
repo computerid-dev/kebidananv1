@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6DBB8A">
+  <title>Poskesdes Pancuran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="lock" class="lock" hidden>
+    <div class="lock-box">
+      <img src="logo.png" alt="Logo Poskesdes" class="logo-lg">
+      <h1>Poskesdes Pancuran</h1>
+      <p>Masukkan PIN untuk membuka data pasien.</p>
+      <input id="lockPin" type="password" inputmode="numeric" maxlength="8" placeholder="PIN" autocomplete="off">
+      <p id="lockErr" class="err" hidden>PIN belum cocok, coba lagi.</p>
+      <button id="lockBtn" class="btn">Buka</button>
+    </div>
+  </div>
+
+  <header class="top">
+    <img src="logo.png" alt="Logo Poskesdes" class="logo">
+    <div>
+      <h1>Poskesdes Dusun III Pancuran</h1>
+      <p id="sapa">Bidan Ratna Sapitri Yanti, S.Keb</p>
+    </div>
+  </header>
+
+  <main id="view"></main>
+
+  <nav class="nav" id="nav">
+    <button data-tab="home" class="on">Beranda</button>
+    <button data-tab="add">Tambah</button>
+    <button data-tab="hist">Riwayat</button>
+    <button data-tab="money">Keuangan</button>
+    <button data-tab="more">Lainnya</button>
+  </nav>
+
+  <div id="toast" class="toast" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
